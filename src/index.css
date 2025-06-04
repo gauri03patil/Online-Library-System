@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== GLOBAL STYLES ========== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff9f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background-color: #ef6d58;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+}
+
+.navbar-links a {
+  margin: 0 1rem;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffd9cd;
+}
+
+/* ========== HERO / HOME SECTION ========== */
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff7f3;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 183, 171, 0.4);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  color: #ef6d58;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px #ffb1a5;
+}
+
+.container h2 {
+  font-size: 1.8rem;
+  color: #391400;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ef6d58;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  list-style: none; /* ✅ Removes bullets */
+  padding: 0;
+  margin: 1rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+li {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(239, 109, 88, 0.2);
+  transition: all 0.3s ease;
+  width: 60%;
+  text-align: center;
+}
+
+li:hover {
+  background-color: #ffeae5;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(239, 109, 88, 0.4);
+}
+
+li a {
+  text-decoration: none;
+  color: #ef6d58;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+li a:hover {
+  color: #d84315;
+}
+
+/* ========== BROWSE PAGE ========== */
+.browse {
+  background-color: #fcded6;
+  padding: 3rem 2rem;
+}
+
+.book-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h3 {
+  margin-bottom: 0.5rem;
+  color: #ef6d58;
+}
+
+.container input {
+  display: block;
+  width: 60%;
+  max-width: 500px;
+  margin: 2rem auto 1.5rem auto;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #ef6d58;
+  border-radius: 10px;
+  background-color: #fff5f2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.container input::placeholder {
+  color: #b46b60;
+  font-style: italic;
+}
+
+.container input:focus {
+  border-color: #ef6d58;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(239, 109, 88, 0.2);
+  outline: none;
+}
+
+
+/* ========== BOOK DETAILS ========== */
+.book-details {
+  background-color: #fff1eb;
+  padding: 3rem;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.book-details h2 {
+  color: #391400;
+  margin-bottom: 1rem;
+}
+
+.book-details p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* ========== ADD BOOK FORM ========== */
+
+/* Container styling */
+.add-book-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff3ed;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(239, 109, 88, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading */
+.add-book-container h2 {
+  text-align: center;
+  color: #ef6d58;
+  margin-bottom: 1.5rem;
+}
+
+/* Error message */
+.error-message {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Form layout */
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Inputs & Textarea */
+.add-book-form input,
+.add-book-form textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus style */
+.add-book-form input:focus,
+.add-book-form textarea:focus {
+  border-color: #ef6d58;
+  box-shadow: 0 0 6px rgba(239, 109, 88, 0.3);
+  outline: none;
+}
+
+/* Textarea specific */
+.add-book-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button style */
+.add-book-form button {
+  background-color: #ef6d58;
+  color: #fff;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-book-form button:hover {
+  background-color: #e55340;
+  transform: scale(1.02);
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .add-book-container {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .add-book-form input,
+  .add-book-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .add-book-form button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background-color: #391400;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    margin-top: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+  }
+}
